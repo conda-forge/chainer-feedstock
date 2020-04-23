@@ -1,17 +1,17 @@
 {% set name = "chainer" %}
-{% set version = "7.2.0" %}
+{% set version = "7.4.0" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: d8b2eea53cd6698e9d1a7c25c4989477f4fd344601f12898996780524440ab0b
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: d52b0ffccabdb12eb2925d2699c8ddabf26f1e63bda75afef29e5b2f5839445a
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
   noarch: python
 
 requirements:
@@ -85,11 +85,11 @@ test:
     - chainerx
 
 about:
-  home: "https://chainer.org/"
+  home: https://chainer.org/
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: "A flexible framework of neural networks"
+  summary: A flexible framework of neural networks
   doc_url: https://docs.chainer.org/en/stable/
   dev_url: https://pypi.org/project/chainer/
 
