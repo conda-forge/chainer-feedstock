@@ -5,7 +5,7 @@ Home: https://chainer.org/
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: A flexible framework of neural networks
 
