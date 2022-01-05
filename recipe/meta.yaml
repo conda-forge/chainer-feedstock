@@ -1,5 +1,5 @@
 {% set name = "chainer" %}
-{% set version = "7.8.0" %}
+{% set version = "7.8.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 266de27c4beda59e58f24a5d0d60f1569703d31e8b1592aa8dd38566c955435b
+  sha256: 179f06176f8d7a42385bc7811956db04e68213cfe30f5081491b9e2b6ff70de8
 
 build:
   number: 0
